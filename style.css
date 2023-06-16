@@ -1,0 +1,128 @@
+.subscribe-main {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(whisk-filled-with-melted-chocolate-close-up.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 62px;
+    padding-bottom: 63px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .subscribe-main {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url('../images/subscribe-mobile@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .subscribe-container {
+        width: 375px;
+        margin: 0 auto;
+    }
+}
+
+
+.subscribe-item {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.subscribe-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width:768px) {
+    .subscribe-item {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .subscribe-btn {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22;
+        color: #FFFFFF;
+        background-color: #FD9222;
+        border-radius: 100px;
+        border: none;
+        display: block;
+        padding: 12px 28px;
+        border: 1px solid transparent;
+        min-width: 128px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .subscribe-container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-container {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe.jpg);
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .subscribe-main {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url('../images/subscribe-tablet@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .subscribe-container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/subscribe-desktop.jpg');
+
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .subscribe-main {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/subscribe-desktop@2x.jpg');
+    }
+}
