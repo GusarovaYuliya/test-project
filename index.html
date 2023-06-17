@@ -1,6 +1,7 @@
+https://github.com/Max-IT-ZT/project-of-the-best-team/pull/28
 <section class="subscribe-main">
     <div class="container subscribe-container">
-        <h2 class="subscribe-item">exPLORE OUR NEW CHOCOLATE FIRST</h2>
+        <h2 class="subscribe-item">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
         <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
             indulgence that will leave
             you
@@ -11,3 +12,62 @@
         <button class="subscribe-btn" type="button" data-modal-open>Subscribe</button>
     </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal>
+
+    <div class="modal">
+        <div class="photo-chocolate">
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-desktop.webp 1x, ../img/our-new-chocolate/tetiana-bykovets-desktop@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-desktop.jpg 1x, ../img/our-new-chocolate/tetiana-bykovets-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+            <!-- ---TABLET---- -->
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-tablet.webp 1x, ../img/our-new-chocolate/tetiana-bykovets-tablet@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp">
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-tablet.jpg 1x, ../img/our-new-chocolate/tetiana-bykovets-tablet@2x.jpg 2x"
+                media="(min-width: 768px)">
+            <!-- -----MOBILE----- -->
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-mobile.webp 1x, ../img/our-new-chocolate/tetiana-bykovets-mobile@2x.webp 2x"
+                media="(min-width: 375px)" type="image/webp">
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-mobile.jpg 1x, ../img/our-new-chocolate/tetiana-bykovets-mobile@2x.jpg 2x"
+                media="(min-width: 375px)">
+            <!-- ------MiN_WIDTH:320PX------------ -->
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-mobile.webp 1x, ../img/our-new-chocolate/tetiana-bykovets-mobile@2x.webp 2x"
+                media="(max-width: 374px)" type="image/webp">
+            <source
+                srcset="../img/our-new-chocolate/tetiana-bykovets-mobile.jpg 1x, ../img/our-new-chocolate/tetiana-bykovets-mobile@2x.jpg 2x"
+                media="(max-width: 374px)">
+            <img src="../img/our-new-chocolate/tetiana-bykovets-mobile.jpg" alt="our-new-chocolate">
+        </div>
+
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon" width="12" height="12">
+                <use href="../img/sprite.svg#icon-x-close"></use>
+            </svg>
+        </button>
+        <span class="mini-text-modal">
+            <p class="text-modal-open">Explore our
+                <span class="subscribe-item-page">new chocolate</span> first!
+            </p>
+        </span>
+        <form class="modal-form">
+            <div class="icon-form-modal">
+                <input id="user-name" name="user-name" type="text" class="modal-form-input"
+                    placeholder="Enter your email" required>
+                <!-- <textarea id="user-comment" name="user-comment" class="modal-form-message" placeholder="Enter your email"></textarea> -->
+                <button type="submit" class="modal-form-subscribe">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+<script src="./js/modal.js"></script>
