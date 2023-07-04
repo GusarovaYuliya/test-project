@@ -279,6 +279,19 @@ color: #fd9222;
     </div>
 </div>
 
+
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+let message;
+// Change code below this line
+const totalPrice = (pricePerDroid * orderedQuantity);
+if (totalPrice > customerCredits) {
+message = `Insufficient funds!` ;
+} else {
+message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left` ;
+}
+// Change code above this line
+
+return message;
 <script src="./js/modal.js"></script>
 
 <!-- _______SUBSCRIBE.CSS_____________________________ -->
@@ -500,3 +513,16 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 background-image: url('../img/our-new-chocolate/subcribe-desktop@2x.jpg');
 }
 }
+
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+let message;
+// Change code below this line
+const totalPrice = (pricePerDroid * orderedQuantity);
+if (totalPrice > customerCredits) {
+message = `Insufficient funds!` ;
+} else {
+message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left` ;
+}
+// Change code above this line
+
+return message;
