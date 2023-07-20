@@ -158,7 +158,7 @@
 // pizzaPalace.order("Vienna", makePizza, onOrderError);
 
 //Task-5
-// Функція calculateTotalPrice(orderedItems) приймає один параметр orderedItems - масив чисел, і розраховує загальну суму його елементів, яка зберігається 
+// Функція calculateTotalPrice(orderedItems) приймає один параметр orderedItems - масив чисел, і розраховує загальну суму його елементів, яка зберігається
 // у змінній totalPrice і повертається як результат роботи функції.
 
 // Виконай рефакторинг функції таким чином, щоб замість циклу for, вона використовувала метод forEach.
@@ -245,26 +245,31 @@
 //  filterArray([12, 24, 8, 41, 76], 38)  //[41, 76]
 // filterArray([12, 24, 8, 41, 76], 20) // [24, 41, 76]
  
-function changeEven(numbers, value) {
-  // Change code below this line
-  const newArray = [];
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
   
-  numbers.forEach(element => {
+//   numbers.forEach(element => {
 
-    if (element % 2 === 0) {
-      newArray.push(element + value)
-    } else {
-      newArray.push(element)
+//     if (element % 2 === 0) {
+//       newArray.push(element + value)
+//     } else {
+//       newArray.push(element)
     
-}
+// }
     
-  return newArray;
-  // Change code above this line
-    });
+//   return newArray;
+//   // Change code above this line
+//     });
+// };
+
+
+// changeEven([1, 2, 3, 4, 5], 10)
+// changeEven([2, 8, 3, 7, 4, 6], 10)
+// changeEven([17, 24, 68, 31, 42], 100)
+// changeEven([44, 13, 81, 92, 36, 54], 100)
+
+const getUsersWithFriend = (users, friendName) => {
+  return users.filter(user =>
+    user.friends.includes(friendName))
 };
-
-
-changeEven([1, 2, 3, 4, 5], 10)
-changeEven([2, 8, 3, 7, 4, 6], 10)
-changeEven([17, 24, 68, 31, 42], 100)
-changeEven([44, 13, 81, 92, 36, 54], 100)
