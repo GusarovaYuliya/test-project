@@ -269,7 +269,15 @@
 // changeEven([17, 24, 68, 31, 42], 100)
 // changeEven([44, 13, 81, 92, 36, 54], 100)
 
-const getUsersWithFriend = (users, friendName) => {
-  return users.filter(user =>
-    user.friends.includes(friendName))
-};
+// const getUsersWithFriend = (users, friendName) => {
+//   return users.filter(user =>
+//     user.friends.includes(friendName))
+// };
+
+const sortByAscendingBalance = [...users].sort(
+  (firstUser, secondUser) => secondUser.balance.localeCompare(firstUser.balance)
+);
+
+const sortByAscendingBalance = [...users].sort(
+  (firstUser, secondUser) => secondUser.balance - (firstUser.balance)
+);
