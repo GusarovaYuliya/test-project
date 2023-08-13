@@ -274,10 +274,13 @@
 //     user.friends.includes(friendName))
 // };
 
-const sortByAscendingBalance = [...users].sort(
-  (firstUser, secondUser) => secondUser.balance.localeCompare(firstUser.balance)
-);
 
-const sortByAscendingBalance = [...users].sort(
-  (firstUser, secondUser) => secondUser.balance - (firstUser.balance)
-);
+
+// const sortByAscendingBalance = [...users].sort(
+//   (firstUser, secondUser) => secondUser.balance - (firstUser.balance)
+// );const sortByAscendingBalance = [...users].sort(
+//   (firstUser, secondUser) => secondUser.balance.localeCompare(firstUser.balance)
+// );
+const names = books => [...books].filter((book) => book.rating > MIN_BOOK_RATING)
+  .map(book => book.author)
+  .sort((a, b) => a.localeCompare(b));
